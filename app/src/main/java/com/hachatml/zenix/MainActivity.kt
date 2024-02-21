@@ -12,6 +12,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.hachatml.zenix.Screens.LoginColumn
 import com.hachatml.zenix.Screens.MainScreen
+import com.hachatml.zenix.Screens.MeditationColumn
+import com.hachatml.zenix.Screens.PlayingColumn
+import com.hachatml.zenix.Screens.QuotesColumn
+import com.hachatml.zenix.Screens.SplashScreen
 import com.hachatml.zenix.ui.theme.ZenixTheme
 
 class MainActivity : ComponentActivity() {
@@ -24,7 +28,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                LoginColumn()
+                SplashScreen()
                 }
             }
         }

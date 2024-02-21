@@ -5,10 +5,11 @@
     "type": "figma",
     "file": "9fkqGLo8hvv1XMCY20CgWQ",
     "node": "2:43",
-    "version": "5190289953",
+    "version": "5198063588",
     "component-id": "83f3b8524e3f195edf26385bc0ee20145892f2cf"
   },
   "default": "Action=Meditation",
+  "documentation": "introduced autoLayout",
   "design": {
     "atoms": [
       {
@@ -18,15 +19,11 @@
       },
       {
         "type": "vector",
-        "id": "MeditationRect"
+        "id": "MeditationVector"
       },
       {
         "type": "text",
         "id": "Join Session"
-      },
-      {
-        "type": "vector",
-        "id": "MeditationVector"
       },
       {
         "type": "vector",
@@ -42,15 +39,11 @@
       },
       {
         "type": "vector",
-        "id": "RespirationRect"
+        "id": "RespirationVector"
       },
       {
         "type": "text",
         "id": "Inspiring Quotes"
-      },
-      {
-        "type": "vector",
-        "id": "RespirationVector"
       },
       {
         "type": "vector",
@@ -66,15 +59,11 @@
       },
       {
         "type": "vector",
-        "id": "GoogleRect"
+        "id": "GoogleVector"
       },
       {
         "type": "text",
         "id": "Login with Google"
-      },
-      {
-        "type": "vector",
-        "id": "GoogleVector"
       }
     ],
     "modes": {
@@ -82,16 +71,12 @@
         "rules": [
           {
             "id": "top_level",
-            "is-structured": "false",
-            "children": [
-              "MeditationRect",
-              "Join Session",
-              "MeditationVector"
-            ],
-            "clip-content": "false"
-          },
-          {
-            "id": "MeditationRect",
+            "padding": {
+              "left": "10.0",
+              "top": "57.0",
+              "right": "10.0",
+              "bottom": "57.0"
+            },
             "border-radius": "20.0",
             "drop-shadow": {
               "color": {
@@ -106,40 +91,42 @@
               "spread": "0.0",
               "blend-mode": "normal"
             },
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "-4.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "0.0"
-              }
-            },
             "size-constraints": {
               "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
+                "sizing-mode": "shrink"
               },
               "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
+                "sizing-mode": "shrink"
               }
             },
-            "vector-content": "meditation_rect.svg"
+            "children": [
+              "MeditationVector",
+              "Join Session"
+            ],
+            "item-spacing": "59.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.8509803921568627"
+            }
+          },
+          {
+            "id": "MeditationVector",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "137.25"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "122.0"
+              }
+            },
+            "vector-content": "meditation_vector.svg"
           },
           {
             "id": "Join Session",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "10.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "246.0"
-              }
-            },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -164,26 +151,6 @@
             "letter-spacing": "0.8999999999999999",
             "line-height": "1.5",
             "typeface": "Anek Telugu"
-          },
-          {
-            "id": "MeditationVector",
-            "margin": {
-              "left": "27.0",
-              "top": "65.0",
-              "right": "28.75",
-              "bottom": "141.0"
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              }
-            },
-            "vector-content": "meditation_vector.svg"
           }
         ]
       },
@@ -300,16 +267,12 @@
         "rules": [
           {
             "id": "top_level",
-            "is-structured": "false",
-            "children": [
-              "RespirationRect",
-              "Inspiring Quotes",
-              "RespirationVector"
-            ],
-            "clip-content": "false"
-          },
-          {
-            "id": "RespirationRect",
+            "padding": {
+              "left": "10.0",
+              "top": "62.0",
+              "right": "10.0",
+              "bottom": "62.0"
+            },
             "border-radius": "20.0",
             "drop-shadow": {
               "color": {
@@ -324,40 +287,42 @@
               "spread": "0.0",
               "blend-mode": "normal"
             },
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "-4.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "0.0"
-              }
-            },
             "size-constraints": {
               "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
+                "sizing-mode": "shrink"
               },
               "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
+                "sizing-mode": "shrink"
               }
             },
-            "vector-content": "respiration_rect.svg"
+            "children": [
+              "RespirationVector",
+              "Inspiring Quotes"
+            ],
+            "item-spacing": "43.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.8509803921568627"
+            }
+          },
+          {
+            "id": "RespirationVector",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "137.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "93.16000366210938"
+              }
+            },
+            "vector-content": "respiration_vector.svg"
           },
           {
             "id": "Inspiring Quotes",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "10.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "225.0"
-              }
-            },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -382,26 +347,6 @@
             "letter-spacing": "0.8999999999999999",
             "line-height": "1.5",
             "typeface": "Anek Telugu"
-          },
-          {
-            "id": "RespirationVector",
-            "margin": {
-              "left": "28.0",
-              "top": "89.0",
-              "right": "28.0",
-              "bottom": "145.83999633789062"
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              }
-            },
-            "vector-content": "respiration_vector.svg"
           }
         ]
       },
@@ -445,12 +390,12 @@
             },
             "size-constraints": {
               "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
+                "sizing-mode": "fixed",
+                "value": "193.0"
               },
               "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
+                "sizing-mode": "fixed",
+                "value": "328.0"
               }
             },
             "vector-content": "gratitude_rect.svg"
@@ -518,16 +463,12 @@
         "rules": [
           {
             "id": "top_level",
-            "is-structured": "false",
-            "children": [
-              "GoogleRect",
-              "Login with Google",
-              "GoogleVector"
-            ],
-            "clip-content": "false"
-          },
-          {
-            "id": "GoogleRect",
+            "padding": {
+              "left": "10.0",
+              "top": "77.0",
+              "right": "10.0",
+              "bottom": "17.0"
+            },
             "border-radius": "20.0",
             "drop-shadow": {
               "color": {
@@ -542,40 +483,43 @@
               "spread": "0.0",
               "blend-mode": "normal"
             },
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "-4.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "0.0"
-              }
-            },
             "size-constraints": {
               "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
+                "sizing-mode": "shrink"
               },
               "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
+                "sizing-mode": "shrink"
               }
             },
-            "vector-content": "google_rect.svg"
+            "children": [
+              "GoogleVector",
+              "Login with Google"
+            ],
+            "item-spacing": "46.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.8509803921568627"
+            }
+          },
+          {
+            "id": "GoogleVector",
+            "border-radius": "7.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "103.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "106.0"
+              }
+            },
+            "vector-content": "google_vector.svg"
           },
           {
             "id": "Login with Google",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "10.0"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "229.0"
-              }
-            },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
@@ -600,27 +544,6 @@
             "letter-spacing": "0.8999999999999999",
             "line-height": "1.5",
             "typeface": "Anek Telugu"
-          },
-          {
-            "id": "GoogleVector",
-            "margin": {
-              "left": "45.0",
-              "top": "77.0",
-              "right": "45.0",
-              "bottom": "145.0"
-            },
-            "border-radius": "7.0",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
-              }
-            },
-            "vector-content": "google_vector.svg"
           }
         ]
       }
@@ -630,7 +553,7 @@
     {
       "design": "Action=Meditation",
       "size": {
-        "width": 193.0,
+        "width": 192.0,
         "height": 328.0
       }
     },
@@ -644,8 +567,8 @@
     {
       "design": "Action=Respiration",
       "size": {
-        "width": 193.0,
-        "height": 328.0
+        "width": 192.0,
+        "height": 328.1600036621094
       }
     },
     {
@@ -658,7 +581,7 @@
     {
       "design": "Action=GoogleLogin",
       "size": {
-        "width": 193.0,
+        "width": 192.0,
         "height": 328.0
       }
     }

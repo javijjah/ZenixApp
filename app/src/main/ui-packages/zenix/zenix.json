@@ -1,0 +1,78 @@
+{
+  "name": "zenix",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "9fkqGLo8hvv1XMCY20CgWQ",
+    "node": "35:129",
+    "version": "5198792507",
+    "component-id": "7f7b82f29fe33cf91aabec4ea45f2a623f5595a1"
+  },
+  "default": "Zenix",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "ZenixText"
+      }
+    ],
+    "modes": {
+      "Zenix": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "ZenixText"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "ZenixText",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "800.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "129.375",
+              "saturation": "0.6274509803921569",
+              "value": "0.2"
+            },
+            "text-content": "Zenix",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "100.0",
+            "line-height": "1.5",
+            "typeface": "Anek Telugu"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Zenix",
+      "size": {
+        "width": 247.0,
+        "height": 99.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

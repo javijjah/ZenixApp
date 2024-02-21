@@ -1,0 +1,77 @@
+{
+  "name": "welcome",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "9fkqGLo8hvv1XMCY20CgWQ",
+    "node": "32:82",
+    "version": "5198030599",
+    "component-id": "c5748a0e68a50e30b98bc6aac0decaedf40ce4e2"
+  },
+  "default": "Welcome",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "WelcomeText"
+      }
+    ],
+    "modes": {
+      "Welcome": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "WelcomeText"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "WelcomeText",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "800.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "129.375",
+              "saturation": "0.6274509803921569",
+              "value": "0.2"
+            },
+            "text-content": "Welcome",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "86.0",
+            "line-height": "1.5",
+            "typeface": "Anek Telugu"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Welcome",
+      "size": {
+        "width": 428.0,
+        "height": 99.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

@@ -1,0 +1,74 @@
+{
+  "name": "main_logo",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "9fkqGLo8hvv1XMCY20CgWQ",
+    "node": "28:562",
+    "version": "5198801773",
+    "component-id": "d0fd3383131f7b4ef3b7d61779d31d770d737ee2"
+  },
+  "default": "MainLogo",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "MainLogoVector"
+      }
+    ],
+    "modes": {
+      "MainLogo": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "MainLogoVector"
+            ],
+            "item-spacing": "10.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "MainLogoVector",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "110.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "110.0"
+              }
+            },
+            "vector-content": "main_logo_vector.svg"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "MainLogo",
+      "size": {
+        "width": 110.0,
+        "height": 110.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

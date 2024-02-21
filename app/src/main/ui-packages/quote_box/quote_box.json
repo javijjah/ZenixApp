@@ -1,0 +1,179 @@
+{
+  "name": "quote_box",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "9fkqGLo8hvv1XMCY20CgWQ",
+    "node": "35:120",
+    "version": "5198661332",
+    "component-id": "1e15b83bb60eaf40ba6b6cf34257f56bb54ccd98"
+  },
+  "default": "QuoteBox",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "QuoteRect"
+      },
+      {
+        "type": "text",
+        "id": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\""
+      },
+      {
+        "type": "text",
+        "id": "-Lorem ipsum"
+      }
+    ],
+    "modes": {
+      "QuoteBox": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "QuoteRect",
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\"",
+              "-Lorem ipsum"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "QuoteRect",
+            "border-radius": "20.0",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-4.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "quote_rect.svg"
+          },
+          {
+            "id": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\"",
+            "margin": {
+              "left": "28.0",
+              "top": "26.0",
+              "right": "28.0",
+              "bottom": "116.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "129.375",
+              "saturation": "0.6274509803921569",
+              "value": "0.2"
+            },
+            "text-content": "$Phrase",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "25.0",
+            "line-height": "1.5",
+            "typeface": "Anek Telugu"
+          },
+          {
+            "id": "-Lorem ipsum",
+            "margin": {
+              "left": "164.0",
+              "top": "189.0",
+              "right": "28.0",
+              "bottom": "35.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "129.375",
+              "saturation": "0.6274509803921569",
+              "value": "0.2"
+            },
+            "text-content": "$Writer",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "30.0",
+            "line-height": "1.5",
+            "typeface": "Anek Telugu"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "Phrase": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    },
+    "Writer": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "QuoteBox",
+      "size": {
+        "width": 384.0,
+        "height": 256.0
+      },
+      "parameters": {
+        "Phrase": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\"",
+        "Writer": "-Lorem ipsum"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

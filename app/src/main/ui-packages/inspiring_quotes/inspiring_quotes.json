@@ -1,0 +1,77 @@
+{
+  "name": "inspiring_quotes",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "9fkqGLo8hvv1XMCY20CgWQ",
+    "node": "35:127",
+    "version": "5198754072",
+    "component-id": "e1dd83b2d4837271ccc204b593cd8bfd8dedd758"
+  },
+  "default": "Inspiring Quotes",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Inspiring Quotes Text"
+      }
+    ],
+    "modes": {
+      "Inspiring Quotes": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Inspiring Quotes Text"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Inspiring Quotes Text",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "800.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "129.375",
+              "saturation": "0.6274509803921569",
+              "value": "0.2"
+            },
+            "text-content": "Inspiring Quotes",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "60.0",
+            "line-height": "1.5",
+            "typeface": "Anek Telugu"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Inspiring Quotes",
+      "size": {
+        "width": 421.0,
+        "height": 145.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

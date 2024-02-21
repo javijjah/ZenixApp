@@ -5,7 +5,7 @@
     "type": "figma",
     "file": "9fkqGLo8hvv1XMCY20CgWQ",
     "node": "23:153",
-    "version": "5190289953",
+    "version": "5198063588",
     "component-id": "d111967ceed72168bef298b94088e95c668b59d2"
   },
   "default": "HelpButton",
@@ -57,6 +57,7 @@
           {
             "id": "top_level_synth",
             "opacity": "100.0",
+            "padding": "5.0",
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "shrink"
@@ -75,10 +76,10 @@
           {
             "id": "HelpVector",
             "margin": {
-              "left": "17.0",
-              "top": "12.0",
-              "right": "18.644920349121094",
-              "bottom": "12.644920349121094"
+              "left": "20.22918701171875",
+              "top": "14.2794189453125",
+              "right": "22.186552047729492",
+              "bottom": "15.04684829711914"
             },
             "size-constraints": {
               "width-constraints": {
@@ -114,8 +115,8 @@
     {
       "design": "HelpButton",
       "size": {
-        "width": 52.644920349121094,
-        "height": 52.644920349121094
+        "width": 62.644920349121094,
+        "height": 62.644920349121094
       }
     }
   ],

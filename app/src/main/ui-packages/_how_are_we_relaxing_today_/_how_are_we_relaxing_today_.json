@@ -1,0 +1,77 @@
+{
+  "name": "_how_are_we_relaxing_today_",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "9fkqGLo8hvv1XMCY20CgWQ",
+    "node": "32:114",
+    "version": "5198080569",
+    "component-id": "1cfbf323a0ba17a35cdcd56c838c19c1df7d3429"
+  },
+  "default": "¿How are we relaxing today?",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "¿How are we relaxing today?"
+      }
+    ],
+    "modes": {
+      "¿How are we relaxing today?": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "¿How are we relaxing today?"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "¿How are we relaxing today?",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "800.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "129.375",
+              "saturation": "0.6274509803921569",
+              "value": "0.2"
+            },
+            "text-content": "¿How are we\nrelaxing today?",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "55.0",
+            "line-height": "1.5",
+            "typeface": "Anek Telugu"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "¿How are we relaxing today?",
+      "size": {
+        "width": 442.0,
+        "height": 160.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

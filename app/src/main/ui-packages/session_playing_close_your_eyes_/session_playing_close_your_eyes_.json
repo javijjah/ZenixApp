@@ -1,0 +1,77 @@
+{
+  "name": "session_playing_close_your_eyes_",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "9fkqGLo8hvv1XMCY20CgWQ",
+    "node": "35:119",
+    "version": "5198557512",
+    "component-id": "b89269c410e8a2cb8593a71ed289d12493611347"
+  },
+  "default": "Session playing. Close your eyes.",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Session playingText"
+      }
+    ],
+    "modes": {
+      "Session playing. Close your eyes.": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Session playingText"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Session playingText",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "800.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "129.375",
+              "saturation": "0.6274509803921569",
+              "value": "0.2"
+            },
+            "text-content": "Session playing.\nClose your eyes.",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "50.0",
+            "line-height": "1.5",
+            "typeface": "Anek Telugu"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Session playing. Close your eyes.",
+      "size": {
+        "width": 447.0,
+        "height": 145.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

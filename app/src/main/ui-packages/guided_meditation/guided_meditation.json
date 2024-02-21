@@ -1,0 +1,77 @@
+{
+  "name": "guided_meditation",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "9fkqGLo8hvv1XMCY20CgWQ",
+    "node": "33:117",
+    "version": "5198433863",
+    "component-id": "b6196b061f4e744804b510ce12bb385ca7888208"
+  },
+  "default": "Guided meditation",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "Guided meditationText"
+      }
+    ],
+    "modes": {
+      "Guided meditation": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "Guided meditationText"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "Guided meditationText",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "font-weight": "800.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "129.375",
+              "saturation": "0.6274509803921569",
+              "value": "0.2"
+            },
+            "text-content": "Guided\nmeditation",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "60.0",
+            "line-height": "1.5",
+            "typeface": "Anek Telugu"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Guided meditation",
+      "size": {
+        "width": 421.0,
+        "height": 145.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
