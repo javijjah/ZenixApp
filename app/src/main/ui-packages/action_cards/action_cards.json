@@ -1,0 +1,669 @@
+{
+  "name": "action_cards",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "9fkqGLo8hvv1XMCY20CgWQ",
+    "node": "2:43",
+    "version": "5190289953",
+    "component-id": "83f3b8524e3f195edf26385bc0ee20145892f2cf"
+  },
+  "default": "Action=Meditation",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "vector",
+        "id": "MeditationRect"
+      },
+      {
+        "type": "text",
+        "id": "Join Session"
+      },
+      {
+        "type": "vector",
+        "id": "MeditationVector"
+      },
+      {
+        "type": "vector",
+        "id": "SunRect"
+      },
+      {
+        "type": "text",
+        "id": "Positive Affirmations"
+      },
+      {
+        "type": "vector",
+        "id": "SunVector"
+      },
+      {
+        "type": "vector",
+        "id": "RespirationRect"
+      },
+      {
+        "type": "text",
+        "id": "Inspiring Quotes"
+      },
+      {
+        "type": "vector",
+        "id": "RespirationVector"
+      },
+      {
+        "type": "vector",
+        "id": "GratitudeRect"
+      },
+      {
+        "type": "text",
+        "id": "Gratitude Journal"
+      },
+      {
+        "type": "vector",
+        "id": "GratitudeVector"
+      },
+      {
+        "type": "vector",
+        "id": "GoogleRect"
+      },
+      {
+        "type": "text",
+        "id": "Login with Google"
+      },
+      {
+        "type": "vector",
+        "id": "GoogleVector"
+      }
+    ],
+    "modes": {
+      "Action=Meditation": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "MeditationRect",
+              "Join Session",
+              "MeditationVector"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "MeditationRect",
+            "border-radius": "20.0",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.4",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-4.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "meditation_rect.svg"
+          },
+          {
+            "id": "Join Session",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "10.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "246.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "172.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "33.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "129.375",
+              "saturation": "0.6274509803921569",
+              "value": "0.2"
+            },
+            "text-content": "Join Session",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "30.0",
+            "letter-spacing": "0.8999999999999999",
+            "line-height": "1.5",
+            "typeface": "Anek Telugu"
+          },
+          {
+            "id": "MeditationVector",
+            "margin": {
+              "left": "27.0",
+              "top": "65.0",
+              "right": "28.75",
+              "bottom": "141.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "meditation_vector.svg"
+          }
+        ]
+      },
+      "Action=Affirmations": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "SunRect",
+              "Positive Affirmations",
+              "SunVector"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "SunRect",
+            "border-radius": "20.0",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.4",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-4.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "sun_rect.svg"
+          },
+          {
+            "id": "Positive Affirmations",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "5.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "232.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "183.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "74.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "129.375",
+              "saturation": "0.6274509803921569",
+              "value": "0.2"
+            },
+            "text-content": "Positive\nAffirmations",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "30.0",
+            "letter-spacing": "0.8999999999999999",
+            "line-height": "1.5",
+            "typeface": "Anek Telugu"
+          },
+          {
+            "id": "SunVector",
+            "margin": {
+              "left": "28.0",
+              "top": "61.0",
+              "right": "28.0",
+              "bottom": "130.0"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "sun_vector.svg"
+          }
+        ]
+      },
+      "Action=Respiration": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "RespirationRect",
+              "Inspiring Quotes",
+              "RespirationVector"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "RespirationRect",
+            "border-radius": "20.0",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.4",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-4.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "respiration_rect.svg"
+          },
+          {
+            "id": "Inspiring Quotes",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "10.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "225.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "172.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "68.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "129.375",
+              "saturation": "0.6274509803921569",
+              "value": "0.2"
+            },
+            "text-content": "Inspiring Quotes",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "30.0",
+            "letter-spacing": "0.8999999999999999",
+            "line-height": "1.5",
+            "typeface": "Anek Telugu"
+          },
+          {
+            "id": "RespirationVector",
+            "margin": {
+              "left": "28.0",
+              "top": "89.0",
+              "right": "28.0",
+              "bottom": "145.83999633789062"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "respiration_vector.svg"
+          }
+        ]
+      },
+      "Action=Gratitude": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "GratitudeRect",
+              "Gratitude Journal",
+              "GratitudeVector"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "GratitudeRect",
+            "border-radius": "20.0",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.4",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-4.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "gratitude_rect.svg"
+          },
+          {
+            "id": "Gratitude Journal",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "10.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "231.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "172.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "68.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "129.375",
+              "saturation": "0.6274509803921569",
+              "value": "0.2"
+            },
+            "text-content": "Gratitude\nJournal\n",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "30.0",
+            "letter-spacing": "0.8999999999999999",
+            "line-height": "1.5",
+            "typeface": "Anek Telugu"
+          },
+          {
+            "id": "GratitudeVector",
+            "margin": {
+              "left": "28.0",
+              "top": "39.0",
+              "right": "28.0",
+              "bottom": "129.1666717529297"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "gratitude_vector.svg"
+          }
+        ]
+      },
+      "Action=GoogleLogin": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": "false",
+            "children": [
+              "GoogleRect",
+              "Login with Google",
+              "GoogleVector"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "GoogleRect",
+            "border-radius": "20.0",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.4",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-4.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "0.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "google_rect.svg"
+          },
+          {
+            "id": "Login with Google",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "10.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "229.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "172.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "82.0"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "129.375",
+              "saturation": "0.6274509803921569",
+              "value": "0.2"
+            },
+            "text-content": "Login with Google",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-size": "30.0",
+            "letter-spacing": "0.8999999999999999",
+            "line-height": "1.5",
+            "typeface": "Anek Telugu"
+          },
+          {
+            "id": "GoogleVector",
+            "margin": {
+              "left": "45.0",
+              "top": "77.0",
+              "right": "45.0",
+              "bottom": "145.0"
+            },
+            "border-radius": "7.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "google_vector.svg"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "Action=Meditation",
+      "size": {
+        "width": 193.0,
+        "height": 328.0
+      }
+    },
+    {
+      "design": "Action=Affirmations",
+      "size": {
+        "width": 193.0,
+        "height": 328.0
+      }
+    },
+    {
+      "design": "Action=Respiration",
+      "size": {
+        "width": 193.0,
+        "height": 328.0
+      }
+    },
+    {
+      "design": "Action=Gratitude",
+      "size": {
+        "width": 193.0,
+        "height": 328.0
+      }
+    },
+    {
+      "design": "Action=GoogleLogin",
+      "size": {
+        "width": 193.0,
+        "height": 328.0
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

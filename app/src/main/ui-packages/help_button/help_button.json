@@ -1,0 +1,125 @@
+{
+  "name": "help_button",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "9fkqGLo8hvv1XMCY20CgWQ",
+    "node": "23:153",
+    "version": "5190289953",
+    "component-id": "d111967ceed72168bef298b94088e95c668b59d2"
+  },
+  "default": "HelpButton",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "group",
+        "id": "top_level_synth"
+      },
+      {
+        "type": "vector",
+        "id": "HelpVector"
+      },
+      {
+        "type": "vector",
+        "id": "HelpEllipse"
+      }
+    ],
+    "modes": {
+      "HelpButton": {
+        "rules": [
+          {
+            "id": "top_level",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "is-structured": "false",
+            "children": [
+              "top_level_synth",
+              "HelpVector"
+            ],
+            "clip-content": "false"
+          },
+          {
+            "id": "top_level_synth",
+            "opacity": "100.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "HelpEllipse"
+            ],
+            "item-spacing": "10.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "HelpVector",
+            "margin": {
+              "left": "17.0",
+              "top": "12.0",
+              "right": "18.644920349121094",
+              "bottom": "12.644920349121094"
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": "1.0"
+              }
+            },
+            "vector-content": "help_vector.svg"
+          },
+          {
+            "id": "HelpEllipse",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "52.644920349121094"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "52.644920349121094"
+              }
+            },
+            "vector-content": "help_ellipse.svg"
+          }
+        ]
+      }
+    }
+  },
+  "previews": [
+    {
+      "design": "HelpButton",
+      "size": {
+        "width": 52.644920349121094,
+        "height": 52.644920349121094
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
