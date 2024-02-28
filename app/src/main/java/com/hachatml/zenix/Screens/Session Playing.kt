@@ -11,6 +11,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.google.relay.compose.RelayColumn
 import com.hachatml.zenix.actioncards.Action
 import com.hachatml.zenix.actioncards.ActionCards
@@ -21,7 +22,7 @@ import com.hachatml.zenix.sessionplayingcloseyoureyes.SessionPlayingText
 import com.hachatml.zenix.welcome.WelcomeText
 
 @Composable
-fun PlayingColumn(){
+fun PlayingColumn(navController: NavController){
         RelayColumn(
             modifier = Modifier
                 .fillMaxSize()

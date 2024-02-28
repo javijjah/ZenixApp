@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "393333176886",
+    "project_id": "test1-521e7",
+    "storage_bucket": "test1-521e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393333176886:android:59c88d4edb14cf2a57f697",
+        "android_client_info": {
+          "package_name": "com.hachatml.zenix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393333176886-4cme2afsj4014lb1lhcti83jdr2i3gmc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjf1ery-oZfJd8WiAPQF2bJlhbpaNpowE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393333176886-4cme2afsj4014lb1lhcti83jdr2i3gmc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

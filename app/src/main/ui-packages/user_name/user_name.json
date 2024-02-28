@@ -1,0 +1,85 @@
+{
+  "name": "user_name",
+  "version": 33,
+  "source-key": {
+    "type": "figma",
+    "file": "9fkqGLo8hvv1XMCY20CgWQ",
+    "node": "49:158",
+    "version": "5235664597",
+    "component-id": "8162b0f7bc9d6d85810ee86d790a886955d25610"
+  },
+  "default": "User name",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "defaultName"
+      }
+    ],
+    "modes": {
+      "User name": {
+        "rules": [
+          {
+            "id": "top_level",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "children": [
+              "defaultName"
+            ],
+            "item-spacing": 10.0,
+            "clip-content": false
+          },
+          {
+            "id": "defaultName",
+            "font-weight": 700.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 129.375,
+              "saturation": 0.6274509803921569,
+              "value": 0.2
+            },
+            "text-content": "$userName",
+            "overflow": "visible",
+            "text-size": 30.0,
+            "line-height": 1.5,
+            "typeface": "Anek Telugu"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "userName": {
+      "data-type": "text",
+      "required": false,
+      "description": ""
+    }
+  },
+  "previews": [
+    {
+      "design": "User name",
+      "size": {
+        "width": 174.0,
+        "height": 45.0
+      },
+      "parameters": {
+        "userName": "defaultName"
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}

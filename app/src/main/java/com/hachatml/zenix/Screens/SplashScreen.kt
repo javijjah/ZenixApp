@@ -10,12 +10,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavController
 import com.google.relay.compose.RelayColumn
 import com.hachatml.zenix.mainlogo.MainLogoVector
 import com.hachatml.zenix.zenix.ZenixText
 
 @Composable
-fun SplashScreen(){
+fun SplashScreen(navController: NavController){
     RelayColumn(
         modifier = Modifier
             .fillMaxSize()

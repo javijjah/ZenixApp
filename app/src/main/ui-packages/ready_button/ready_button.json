@@ -1,11 +1,11 @@
 {
   "name": "ready_button",
-  "version": 32,
+  "version": 33,
   "source-key": {
     "type": "figma",
     "file": "9fkqGLo8hvv1XMCY20CgWQ",
     "node": "20:36",
-    "version": "5190289953",
+    "version": "5235664597",
     "component-id": "4cb223a344076263085c00a3e72d334cf5386b8f"
   },
   "default": "Ready or not=Ready",
@@ -47,6 +47,10 @@
       {
         "type": "text",
         "id": "Next"
+      },
+      {
+        "type": "text",
+        "id": "Sign out"
       }
     ],
     "modes": {
@@ -54,47 +58,47 @@
         "rules": [
           {
             "id": "top_level",
-            "is-structured": "false",
+            "is-structured": false,
             "children": [
               "ReadyRect",
               "I'm ready"
             ],
-            "clip-content": "false"
+            "clip-content": false
           },
           {
             "id": "ReadyRect",
-            "border-radius": "10.0",
+            "border-radius": 10.0,
             "drop-shadow": {
               "color": {
-                "alpha": "0.24705882352941178",
-                "hue": "0.0",
-                "saturation": "0.0",
-                "value": "0.0"
+                "alpha": 0.24705882352941178,
+                "hue": 0.0,
+                "saturation": 0.0,
+                "value": 0.0
               },
-              "blur": "4.0",
-              "offset-x": "0.0",
-              "offset-y": "4.0",
-              "spread": "0.0",
+              "blur": 4.0,
+              "offset-x": 0.0,
+              "offset-y": 4.0,
+              "spread": 0.0,
               "blend-mode": "normal"
             },
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "-4.0"
+                "offset": -4.0
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "0.0"
+                "offset": 0.0
               }
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "proportional",
-                "value": "1.0"
+                "value": 1.0
               },
               "height-constraints": {
                 "sizing-mode": "proportional",
-                "value": "1.0"
+                "value": 1.0
               }
             },
             "vector-content": "ready_rect.svg"
@@ -102,32 +106,32 @@
           {
             "id": "I'm ready",
             "margin": {
-              "top": "11.0",
-              "bottom": "9.625"
+              "top": 11.0,
+              "bottom": 9.625
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "proportional",
-                "value": "1.0"
+                "value": 1.0
               },
               "height-constraints": {
                 "sizing-mode": "proportional",
-                "value": "1.0"
+                "value": 1.0
               }
             },
-            "font-weight": "700.0",
+            "font-weight": 700.0,
             "color": {
-              "alpha": "1.0",
-              "hue": "129.375",
-              "saturation": "0.6274509803921569",
-              "value": "0.2"
+              "alpha": 1.0,
+              "hue": 129.375,
+              "saturation": 0.6274509803921569,
+              "value": 0.2
             },
             "text-content": "I'm ready",
             "overflow": "visible",
-            "max-lines": "-1",
-            "text-size": "25.0",
-            "letter-spacing": "0.75",
-            "line-height": "1.5",
+            "max-lines": -1,
+            "text-size": 25.0,
+            "letter-spacing": 0.75,
+            "line-height": 1.5,
             "typeface": "Anek Telugu"
           }
         ]
@@ -136,47 +140,47 @@
         "rules": [
           {
             "id": "top_level",
-            "is-structured": "false",
+            "is-structured": false,
             "children": [
               "NotReadyRect",
               "Not ready"
             ],
-            "clip-content": "false"
+            "clip-content": false
           },
           {
             "id": "NotReadyRect",
-            "border-radius": "10.0",
+            "border-radius": 10.0,
             "drop-shadow": {
               "color": {
-                "alpha": "0.24705882352941178",
-                "hue": "0.0",
-                "saturation": "0.0",
-                "value": "0.0"
+                "alpha": 0.24705882352941178,
+                "hue": 0.0,
+                "saturation": 0.0,
+                "value": 0.0
               },
-              "blur": "4.0",
-              "offset-x": "0.0",
-              "offset-y": "4.0",
-              "spread": "0.0",
+              "blur": 4.0,
+              "offset-x": 0.0,
+              "offset-y": 4.0,
+              "spread": 0.0,
               "blend-mode": "normal"
             },
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "-4.0"
+                "offset": -4.0
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "0.0"
+                "offset": 0.0
               }
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "proportional",
-                "value": "1.0"
+                "value": 1.0
               },
               "height-constraints": {
                 "sizing-mode": "proportional",
-                "value": "1.0"
+                "value": 1.0
               }
             },
             "vector-content": "not_ready_rect.svg"
@@ -184,32 +188,32 @@
           {
             "id": "Not ready",
             "margin": {
-              "top": "11.0",
-              "bottom": "9.625"
+              "top": 11.0,
+              "bottom": 9.625
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "proportional",
-                "value": "1.0"
+                "value": 1.0
               },
               "height-constraints": {
                 "sizing-mode": "proportional",
-                "value": "1.0"
+                "value": 1.0
               }
             },
-            "font-weight": "700.0",
+            "font-weight": 700.0,
             "color": {
-              "alpha": "1.0",
-              "hue": "129.375",
-              "saturation": "0.6274509803921569",
-              "value": "0.2"
+              "alpha": 1.0,
+              "hue": 129.375,
+              "saturation": 0.6274509803921569,
+              "value": 0.2
             },
             "text-content": "Not ready",
             "overflow": "visible",
-            "max-lines": "-1",
-            "text-size": "24.0",
-            "letter-spacing": "0.72",
-            "line-height": "1.5",
+            "max-lines": -1,
+            "text-size": 24.0,
+            "letter-spacing": 0.72,
+            "line-height": 1.5,
             "typeface": "Anek Telugu"
           }
         ]
@@ -218,47 +222,47 @@
         "rules": [
           {
             "id": "top_level",
-            "is-structured": "false",
+            "is-structured": false,
             "children": [
               "LeaveRect",
               "Leave"
             ],
-            "clip-content": "false"
+            "clip-content": false
           },
           {
             "id": "LeaveRect",
-            "border-radius": "10.0",
+            "border-radius": 10.0,
             "drop-shadow": {
               "color": {
-                "alpha": "0.24705882352941178",
-                "hue": "0.0",
-                "saturation": "0.0",
-                "value": "0.0"
+                "alpha": 0.24705882352941178,
+                "hue": 0.0,
+                "saturation": 0.0,
+                "value": 0.0
               },
-              "blur": "4.0",
-              "offset-x": "0.0",
-              "offset-y": "4.0",
-              "spread": "0.0",
+              "blur": 4.0,
+              "offset-x": 0.0,
+              "offset-y": 4.0,
+              "spread": 0.0,
               "blend-mode": "normal"
             },
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "-4.0"
+                "offset": -4.0
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "0.0"
+                "offset": 0.0
               }
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "proportional",
-                "value": "1.0"
+                "value": 1.0
               },
               "height-constraints": {
                 "sizing-mode": "proportional",
-                "value": "1.0"
+                "value": 1.0
               }
             },
             "vector-content": "leave_rect.svg"
@@ -266,32 +270,32 @@
           {
             "id": "Leave",
             "margin": {
-              "top": "11.0",
-              "bottom": "9.625"
+              "top": 11.0,
+              "bottom": 9.625
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "proportional",
-                "value": "1.0"
+                "value": 1.0
               },
               "height-constraints": {
                 "sizing-mode": "proportional",
-                "value": "1.0"
+                "value": 1.0
               }
             },
-            "font-weight": "700.0",
+            "font-weight": 700.0,
             "color": {
-              "alpha": "1.0",
-              "hue": "129.375",
-              "saturation": "0.6274509803921569",
-              "value": "0.2"
+              "alpha": 1.0,
+              "hue": 129.375,
+              "saturation": 0.6274509803921569,
+              "value": 0.2
             },
             "text-content": "Leave",
             "overflow": "visible",
-            "max-lines": "-1",
-            "text-size": "25.0",
-            "letter-spacing": "0.75",
-            "line-height": "1.5",
+            "max-lines": -1,
+            "text-size": 25.0,
+            "letter-spacing": 0.75,
+            "line-height": 1.5,
             "typeface": "Anek Telugu"
           }
         ]
@@ -300,47 +304,47 @@
         "rules": [
           {
             "id": "top_level",
-            "is-structured": "false",
+            "is-structured": false,
             "children": [
               "NextRect",
               "Next"
             ],
-            "clip-content": "false"
+            "clip-content": false
           },
           {
             "id": "NextRect",
-            "border-radius": "10.0",
+            "border-radius": 10.0,
             "drop-shadow": {
               "color": {
-                "alpha": "0.24705882352941178",
-                "hue": "0.0",
-                "saturation": "0.0",
-                "value": "0.0"
+                "alpha": 0.24705882352941178,
+                "hue": 0.0,
+                "saturation": 0.0,
+                "value": 0.0
               },
-              "blur": "4.0",
-              "offset-x": "0.0",
-              "offset-y": "4.0",
-              "spread": "0.0",
+              "blur": 4.0,
+              "offset-x": 0.0,
+              "offset-y": 4.0,
+              "spread": 0.0,
               "blend-mode": "normal"
             },
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "-4.0"
+                "offset": -4.0
               },
               "vertical": {
                 "attachment": "start",
-                "offset": "0.0"
+                "offset": 0.0
               }
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "proportional",
-                "value": "1.0"
+                "value": 1.0
               },
               "height-constraints": {
                 "sizing-mode": "proportional",
-                "value": "1.0"
+                "value": 1.0
               }
             },
             "vector-content": "next_rect.svg"
@@ -348,32 +352,114 @@
           {
             "id": "Next",
             "margin": {
-              "top": "11.0",
-              "bottom": "9.625"
+              "top": 11.0,
+              "bottom": 9.625
             },
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "proportional",
-                "value": "1.0"
+                "value": 1.0
               },
               "height-constraints": {
                 "sizing-mode": "proportional",
-                "value": "1.0"
+                "value": 1.0
               }
             },
-            "font-weight": "700.0",
+            "font-weight": 700.0,
             "color": {
-              "alpha": "1.0",
-              "hue": "129.375",
-              "saturation": "0.6274509803921569",
-              "value": "0.2"
+              "alpha": 1.0,
+              "hue": 129.375,
+              "saturation": 0.6274509803921569,
+              "value": 0.2
             },
             "text-content": "Next",
             "overflow": "visible",
-            "max-lines": "-1",
-            "text-size": "25.0",
-            "letter-spacing": "0.75",
-            "line-height": "1.5",
+            "max-lines": -1,
+            "text-size": 25.0,
+            "letter-spacing": 0.75,
+            "line-height": 1.5,
+            "typeface": "Anek Telugu"
+          }
+        ]
+      },
+      "Ready or not=Sign Out": {
+        "rules": [
+          {
+            "id": "top_level",
+            "is-structured": false,
+            "children": [
+              "ReadyRect",
+              "Sign out"
+            ],
+            "clip-content": false
+          },
+          {
+            "id": "ReadyRect",
+            "border-radius": 10.0,
+            "drop-shadow": {
+              "color": {
+                "alpha": 0.24705882352941178,
+                "hue": 0.0,
+                "saturation": 0.0,
+                "value": 0.0
+              },
+              "blur": 4.0,
+              "offset-x": 0.0,
+              "offset-y": 4.0,
+              "spread": 0.0,
+              "blend-mode": "normal"
+            },
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": -4.0
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": 0.0
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "vector-content": "ready_rect1.svg"
+          },
+          {
+            "id": "Sign out",
+            "margin": {
+              "top": 11.0,
+              "bottom": 9.625
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              },
+              "height-constraints": {
+                "sizing-mode": "proportional",
+                "value": 1.0
+              }
+            },
+            "font-weight": 700.0,
+            "color": {
+              "alpha": 1.0,
+              "hue": 129.375,
+              "saturation": 0.6274509803921569,
+              "value": 0.2
+            },
+            "text-content": "Sign out",
+            "overflow": "visible",
+            "max-lines": -1,
+            "text-size": 25.0,
+            "letter-spacing": 0.75,
+            "line-height": 1.5,
             "typeface": "Anek Telugu"
           }
         ]
@@ -404,6 +490,13 @@
     },
     {
       "design": "Ready or not=Next",
+      "size": {
+        "width": 120.0,
+        "height": 55.0
+      }
+    },
+    {
+      "design": "Ready or not=Sign Out",
       "size": {
         "width": 120.0,
         "height": 55.0
