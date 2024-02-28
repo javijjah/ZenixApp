@@ -11,11 +11,15 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.Button
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
@@ -36,6 +40,18 @@ import com.hachatml.zenix.usercard.UserCard
 
 @Composable
 fun MeditationColumn(navController: NavController, VM: MeditationRoomVM, userData: UserData?) {
+    var showDialog by remember { mutableStateOf(false) }
+    if (showDialog){
+        AlertDialog(
+            onDismissRequest = { showDialog = false },
+            title = { Text("Meditation Room") },
+            text = { Text("You're now waiting to get inside a session.\n" +
+                    "When all the users are ready, the session starts.\n" +
+                    "If the room remains active for 10 minutes and all the users are not ready,\n" +
+                    "the session starts itself anyways.") },
+            confirmButton = { Button(onClick = { showDialog = false }) { Text("OK") } },
+        )
+    }
     BackHandler {
         println("called BackHandler")
         VM.userLeft(userData)
@@ -50,7 +66,7 @@ fun MeditationColumn(navController: NavController, VM: MeditationRoomVM, userDat
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         HelpButton(
-            modifier = Modifier
+            modifier = Modifier.clickable { showDialog=!showDialog }
                 .size(63.dp, 63.dp)
                 .clip(RoundedCornerShape(100))
         )
@@ -61,7 +77,7 @@ fun MeditationColumn(navController: NavController, VM: MeditationRoomVM, userDat
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             if (VM.userList.size < 5) {
-                LazyColumn {
+                LazyColumn(Modifier.size(500.dp,100.dp)){
                     itemsIndexed(VM.userList) { index, user ->
                         user.username?.let { UserCard(Modifier, it) }
                         Spacer(modifier = Modifier.size(0.dp, 40.dp))
