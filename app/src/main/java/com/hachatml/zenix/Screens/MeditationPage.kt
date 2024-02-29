@@ -95,7 +95,7 @@ fun MeditationColumn(navController: NavController, VM: MeditationRoomVM, userDat
             //Para gestionar el cambio de botón, esta ha sido mi lógica, la cual evita que haya
             //bugs si el botón se spammea
             var ready by rememberSaveable {
-                mutableStateOf(true)
+                mutableStateOf(false)
             }
             var readyState by rememberSaveable {
                 mutableStateOf(ReadyOrNot.Ready)
@@ -105,11 +105,12 @@ fun MeditationColumn(navController: NavController, VM: MeditationRoomVM, userDat
                     .size(120.dp, 55.dp)
                     .clickable {
                         if (ready) {
-                            readyState = ReadyOrNot.Not
+                            readyState = ReadyOrNot.Ready
                             ready = false
                         } else {
-                            readyState = ReadyOrNot.Ready
+                            readyState = ReadyOrNot.Not
                             ready = true
+                            navController.navigate(Routes.MeditationPage.route)
                         }
                         VM.setReadyState(VM.localUserID, !ready)
                     }, readyOrNot = readyState
