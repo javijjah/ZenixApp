@@ -3,7 +3,6 @@ package com.hachatml.zenix.Screens
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
@@ -24,7 +23,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.google.relay.compose.RelayColumn
 import com.google.relay.compose.RelayRow
-import com.hachatml.zenix.MeditationRoomVM
+import com.hachatml.zenix.model.MeditationRoomVM
 import com.hachatml.zenix.Routes
 import com.hachatml.zenix.actioncards.Action
 import com.hachatml.zenix.actioncards.ActionCards
@@ -33,8 +32,14 @@ import com.hachatml.zenix.howarewerelaxingtoday.HowAreWeRelaxingToday
 import com.hachatml.zenix.login.Login
 import com.hachatml.zenix.signin.UserData
 
+/**
+ * Página principal de nuestra app, la cual redirige al resto
+ * @param navController Nav controlador del movimiento en la app
+ * @param meditationVM ViewModel de nuestro gestor de salas de meditación, lo cual debe ser el mismo en toda la app
+ * @param userData datos del usuario los cuales se pasarán al viewModel al pasar a la sala de meditación
+ */
 @Composable
-fun MainScreen(navController: NavController,meditationVM:MeditationRoomVM, userData: UserData?){
+fun MainScreen(navController: NavController, meditationVM: MeditationRoomVM, userData: UserData?){
     var showDialog by remember { mutableStateOf(false) }
     if (showDialog){
         AlertDialog(

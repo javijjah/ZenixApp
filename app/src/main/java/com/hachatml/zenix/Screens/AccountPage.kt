@@ -35,12 +35,19 @@ import com.hachatml.zenix.signin.UserData
 import com.hachatml.zenix.username.UserName
 import kotlinx.coroutines.Job
 
+/**
+ * Columna principal de la Screen de cuenta cuando la sesión ya está iniciada
+ * @param navController Nav controlador del movimiento en la app
+ * @param userData los datos del usuario para mostrarlos en el apartado "Cuenta"
+ * @param onSignOut Lambda al ejecutar para solicitar el LogOut
+ */
 @Composable
 fun CuentaColumn(
     navController: NavController,
     userData: UserData?,
     onSignOut: () -> Job
 ) {
+    //Esto se realiza así ya que si no puede bugearse con la secuencia al logear al usuario
     BackHandler {
         navController.navigate(Routes.MainScreen.route)
     }
@@ -62,6 +69,7 @@ fun CuentaColumn(
                 .background(color = Color(0xFFD9D9D9))
                 .padding(start = 67.dp, end = 67.dp)
         ) {
+            //Esto utiliza Coil para cargar de forma asíncrona la imagen del usuario
             if (userData?.profilePictureUrl != null) {
                 AsyncImage(
                     model = userData.profilePictureUrl,

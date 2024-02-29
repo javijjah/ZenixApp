@@ -15,6 +15,10 @@ import com.google.relay.compose.RelayColumn
 import com.hachatml.zenix.mainlogo.MainLogoVector
 import com.hachatml.zenix.zenix.ZenixText
 
+/**
+ * SplashScreen creada para imitar el diseño de Relay "Splash Screen", pero deprecada por no ser
+ * realmente necesaria
+ */
 @Composable
 fun SplashScreen(navController: NavController){
     RelayColumn(

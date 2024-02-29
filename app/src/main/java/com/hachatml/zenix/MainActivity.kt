@@ -27,18 +27,24 @@ import com.hachatml.zenix.Screens.MeditationColumn
 import com.hachatml.zenix.Screens.PlayingColumn
 import com.hachatml.zenix.Screens.QuotesColumn
 import com.hachatml.zenix.Screens.SplashScreen
+import com.hachatml.zenix.model.MeditationRoomVM
 import com.hachatml.zenix.signin.GoogleAuthUIClient
 import com.hachatml.zenix.signin.SignInVM
 import com.hachatml.zenix.ui.theme.ZenixTheme
 import kotlinx.coroutines.launch
 
+/**
+ * DOCUMENTACIÓN AVANZADA EN EL README.MD
+ */
 class MainActivity : ComponentActivity() {
+    //Este será nuestro token de inicio de sesión en google
     private val googleAuthUiClient by lazy {
         GoogleAuthUIClient(
             context = applicationContext,
             oneTapClient = Identity.getSignInClient(applicationContext)
         )
     }
+    //Nuestro VM sobre la screen que utiliza RTDB
     private val MeditationVM = MeditationRoomVM()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -56,7 +62,10 @@ class MainActivity : ComponentActivity() {
                     ) {
                         composable(Routes.SplashScreen.route) { SplashScreen(navController) }
                         composable(Routes.MainScreen.route) { MainScreen(navController,MeditationVM,googleAuthUiClient.getSignedInUser()) }
+                        //Nuestro composable de login es tan largo debido a que tiene que gestionar la llamada principal a los
+                        //intentos de login, y cargar una screen u otra en función de si el usuario está logeado
                         composable(Routes.LoginPage.route) {
+                            //NUestro VM sobre el inicio de sesión
                             val viewModel = viewModel<SignInVM>()
                             val state by viewModel.state.collectAsState()
                             LaunchedEffect(key1 = Unit) {

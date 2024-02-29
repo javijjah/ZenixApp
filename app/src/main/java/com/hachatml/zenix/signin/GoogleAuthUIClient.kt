@@ -13,11 +13,20 @@ import com.hachatml.zenix.R
 import kotlinx.coroutines.tasks.await
 import kotlin.coroutines.cancellation.CancellationException
 
+/**
+ * Encargado de conectar la aplicación con la llamada a Google de que el usuario quiere iniciar sesión
+ * @param context utilizado para recibir el string webpage de R.strings
+ * @param oneTapClient es una entidad que conseguiremos a través del Sign In de los Google Play Services
+ */
 class GoogleAuthUIClient(
     private val context: Context,
     private val oneTapClient: SignInClient
 ) {
     private val auth = Firebase.auth
+
+    /**
+     * Realiza el inicio de sesión como tal, o manda una excepción si esta falla o se cancela
+     */
     suspend fun signIn(): IntentSender? {
         val result = try {
             oneTapClient.beginSignIn(
@@ -31,10 +40,18 @@ class GoogleAuthUIClient(
         return result?.pendingIntent?.intentSender
     }
 
+    /**
+     * Esta función comienza la "intención" (Intent) del usuario de realizar el sign in per sé
+     * @param intent La llamada que realiza el usuario para iniciar sesión
+     */
     suspend fun getSignInIntent(intent: Intent): SignInResult {
+        //Estas son las credenciales del usuario y del token de intento de usuario pasadas a variables
+        //para poder trabajar con ellas
         val credencial = oneTapClient.getSignInCredentialFromIntent(intent)
         val googleIdToken = credencial.googleIdToken
         val googleCredentials = GoogleAuthProvider.getCredential(googleIdToken, null)
+        //Una vez más, un tryCatch que recoge un posible error y pasa los datos de inicio de sesión como
+        //un userData, que se devolverá como una clase SignInResult
         return try {
             val user = auth.signInWithCredential(googleCredentials).await().user
             SignInResult(
@@ -57,6 +74,9 @@ class GoogleAuthUIClient(
         }
     }
 
+    /**
+     * Entrega los datos del usuario iniciado como UserData(datos utilizables)
+     */
     fun getSignedInUser(): UserData? = auth.currentUser?.run {
         UserData(
             userId = uid,
@@ -65,6 +85,9 @@ class GoogleAuthUIClient(
         )
     }
 
+    /**
+     * Llama al signOut del oneTapClient y de firebase.auth
+     */
     suspend fun signOut() {
         try {
             oneTapClient.signOut().await()

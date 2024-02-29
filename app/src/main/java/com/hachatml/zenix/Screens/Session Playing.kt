@@ -26,10 +26,16 @@ import com.hachatml.zenix.readybutton.ReadyOrNot
 import com.hachatml.zenix.sessionplayingcloseyoureyes.SessionPlayingText
 import com.hachatml.zenix.welcome.WelcomeText
 
+/**
+ * Composable principal de la screen de cuando una sesión se está ejecutando.
+ */
 @Composable
 fun PlayingColumn(navController: NavController) {
+    //este media player es el objeto que se encarga de reproducir nuestro audio. Colocándolo de esta forma,
+    //comenzará a reproducirse nada más cargue el Composable
     val mMediaPlayer = MediaPlayer.create(LocalContext.current, R.raw.meditation)
     mMediaPlayer.start()
+    mMediaPlayer.isLooping=false
     RelayColumn(
         modifier = Modifier
             .fillMaxSize()
@@ -43,7 +49,9 @@ fun PlayingColumn(navController: NavController) {
         ReadyButton(
             modifier = Modifier
                 .size(120.dp, 55.dp)
-                .clickable { navController.navigate(Routes.MainScreen.route) },
+                .clickable {
+                    mMediaPlayer.stop()
+                    navController.navigate(Routes.MainScreen.route) },
             readyOrNot = ReadyOrNot.LeaveSession
         )
     }

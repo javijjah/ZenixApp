@@ -30,6 +30,10 @@ import com.hachatml.zenix.readybutton.ReadyButton
 import com.hachatml.zenix.readybutton.ReadyOrNot
 import com.hachatml.zenix.usercard.UserCard
 
+/**
+ * Composable principal de la página Inspiring Quotes
+ * @param navController Nav controlador del movimiento en la app
+ */
 @Composable
 fun QuotesColumn(navController: NavController){
     var showDialog by remember { mutableStateOf(false) }

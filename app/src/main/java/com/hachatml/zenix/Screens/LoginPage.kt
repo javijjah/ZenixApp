@@ -34,7 +34,12 @@ import com.hachatml.zenix.actioncards.ActionCards
 import com.hachatml.zenix.helpbutton.HelpButton
 import com.hachatml.zenix.signin.SignInState
 import com.hachatml.zenix.welcome.WelcomeText
-
+/**
+ * Columna principal de la Screen de cuenta cuando la sesión aún no está iniciada
+ * @param navController Nav controlador del movimiento en la app
+ * @param state Observa el estado del signin por si hubiese algún error
+ * @param signInClick realiza la acción del inicio de sesión
+ */
 @Composable
 fun LoginColumn(navController: NavController, state: SignInState, signInClick: () -> Unit) {
     val context = LocalContext.current
@@ -50,6 +55,7 @@ fun LoginColumn(navController: NavController, state: SignInState, signInClick: (
             confirmButton = { Button(onClick = { showDialog = false }) { Text("OK") } },
         )
     }
+    //Ejecutará un toast en caso de error al hacer login
     LaunchedEffect(key1 = state.signInError) {
         state.signInError?.let { error ->
             Toast.makeText(

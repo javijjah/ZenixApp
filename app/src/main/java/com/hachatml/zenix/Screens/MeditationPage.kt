@@ -6,7 +6,6 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
@@ -15,9 +14,7 @@ import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
@@ -29,7 +26,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.google.relay.compose.RelayColumn
-import com.hachatml.zenix.MeditationRoomVM
+import com.hachatml.zenix.model.MeditationRoomVM
 import com.hachatml.zenix.Routes
 import com.hachatml.zenix.guidedmeditation.GuidedMeditation
 import com.hachatml.zenix.helpbutton.HelpButton
@@ -38,6 +35,12 @@ import com.hachatml.zenix.readybutton.ReadyOrNot
 import com.hachatml.zenix.signin.UserData
 import com.hachatml.zenix.usercard.UserCard
 
+/**
+ * Composable principal de la sala de meditación
+ * @param navController Nav controlador del movimiento en la app
+ * @param VM ViewModel de la sala de meditación para gestionar los usuarios
+ * @param userData Datos de los usuarios, sacados del inicio de sesión de Google
+ */
 @Composable
 fun MeditationColumn(navController: NavController, VM: MeditationRoomVM, userData: UserData?) {
     var showDialog by remember { mutableStateOf(false) }
@@ -53,8 +56,8 @@ fun MeditationColumn(navController: NavController, VM: MeditationRoomVM, userDat
         )
     }
     BackHandler {
-        println("called BackHandler")
         VM.userLeft(userData)
+        //AL igual que en la otra screen, el Flow de movimiento puede verse afectado si no hacemos esto
         navController.navigate(Routes.MainScreen.route)
     }
     VM.populateUserList()
@@ -76,6 +79,8 @@ fun MeditationColumn(navController: NavController, VM: MeditationRoomVM, userDat
             verticalArrangement = Arrangement.SpaceEvenly,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            //Para no crear una LazyColumn enorme y pequeña, si hay demasiados usuarios se
+            //optará por solo mostrar el número de usuarios
             if (VM.userList.size < 5) {
                 LazyColumn(Modifier.size(500.dp,100.dp)){
                     itemsIndexed(VM.userList) { index, user ->
@@ -87,6 +92,8 @@ fun MeditationColumn(navController: NavController, VM: MeditationRoomVM, userDat
             else{
                 UserCard(Modifier, "Number of users: ${VM.userList.size}")
             }
+            //Para gestionar el cambio de botón, esta ha sido mi lógica, la cual evita que haya
+            //bugs si el botón se spammea
             var ready by rememberSaveable {
                 mutableStateOf(true)
             }
