@@ -58,7 +58,7 @@ class MainActivity : ComponentActivity() {
                     val navController = rememberNavController()
                     NavHost(
                         navController = navController,
-                        startDestination = Routes.SessionPlaying.route
+                        startDestination = Routes.MainScreen.route
                     ) {
                         composable(Routes.SplashScreen.route) { SplashScreen(navController) }
                         composable(Routes.MainScreen.route) { MainScreen(navController,MeditationVM,googleAuthUiClient.getSignedInUser()) }
