@@ -110,7 +110,7 @@ fun MeditationColumn(navController: NavController, VM: MeditationRoomVM, userDat
                         } else {
                             readyState = ReadyOrNot.Not
                             ready = true
-                            navController.navigate(Routes.MeditationPage.route)
+                            navController.navigate(Routes.SessionPlaying.route)
                         }
                         VM.setReadyState(VM.localUserID, !ready)
                     }, readyOrNot = readyState
